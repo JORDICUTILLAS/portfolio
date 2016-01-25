@@ -39,6 +39,10 @@ h6 {
 	font-weight: 100;	
 }
 
+nav {
+	background-color: #292929;
+}
+
 p {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
@@ -46,6 +50,7 @@ p {
 	font-weight: 100;
 	line-height: 25px;
 }
+
 section {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;	
@@ -175,6 +180,7 @@ legend{
 .both{
 	clear: both;
 }
+
 .center{
 
 	margin: 0 auto;
