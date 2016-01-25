@@ -52,14 +52,26 @@ section {
 }
 
 a {
-	color: #078291;
-	font-style: bold;
+	color: #fec901;
+	font-weight: bold;
 	text-decoration: none;
+	padding: 3px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 a:hover{
-	color:  #7dc195;
+	color:  #8da9a7;
 	text-decoration: overline;
+}
+
+a:active{
+	color:  #8da9a7;
+	background-color: #fff;
+	color: #000;
+
 }
 
 strong {
