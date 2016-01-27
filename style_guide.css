@@ -1,6 +1,8 @@
 body, html {
 	margin: 0 auto;
 	background-color: #000;
+	color:#fff;
+	font-family: 'Raleway', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -8,9 +10,16 @@ h1,h2,h3,h4,h5,h6 {
 	color: #fff;
 }
 
+header{	
+	text-align: right;	
+	margin: 0 auto;
+	width: 50%;
+	background-color: # 292929;	
+}
+
 h1 {
 	font-size: 50px;
-	font-weight: bold;
+	font-weight: 600;
 
 }
 
@@ -35,12 +44,15 @@ h5 {
 }
 
 h6 {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 100;	
 }
 
 nav {
+	margin-top: 25px;
 	background-color: #292929;
+	text-decoration: none;
+	height: 75px;	
 }
 
 p {
@@ -53,23 +65,28 @@ p {
 
 section {
 	font-family: 'Raleway', sans-serif;
-	font-size: 16px;	
+	font-size: 16px;
+	width: 30%;
+	display: inline-block;
+	padding: 16px;	
 }
 
 a {
+	font-family: 'Raleway', sans-serif;
 	color: #fec901;
-	font-weight: bold;
+	font-weight: 300;
 	text-decoration: none;
 	padding: 3px;
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    padding-right:16px;
 }
 
 a:hover{
 	color:  #8da9a7;
-	text-decoration: overline;
+	text-decoration: overline;	
 }
 
 a:active{
@@ -80,18 +97,20 @@ a:active{
 }
 
 strong {
-	color: #a21e14;
+	color: #fec901;
 }
 
 em {
 	font-family: 'Crimson Text', serif;
-	font-size: 20px;
+	font-size: 20px;	
 }
 
 mark {
-	border: 2px solid #518447;
-	background-color: #fff;
-	padding: 1px;
+	border: 2px solid #fff;
+	background-color: #8DA9A7;
+	padding: 2px;
+	color:#000;
+	font-weight: 400;
 }
 
 s {
@@ -100,11 +119,14 @@ s {
 
 ul {
 	text-decoration: none;
+	margin:0 auto;
+	line-height: 75px;
 }
 
 li {
 	color: #fff;
 	font-weight: 100;
+	display: inline-block;	
 }
 
 dt {
@@ -118,7 +140,7 @@ dd {
 	font-weight: 600;
 }
 
-.button{
+.button-principal{
 	border: solid 3px #fff;
 	padding: 10px 30px;
 	font-family: 'Raleway', sans-serif;
@@ -136,27 +158,52 @@ dd {
     transition: all 0.5s ease;   
 }
 
-.button:hover{
+.button-principal:hover{
 	border: solid 3px #fec901;	
+	background-color: #fff;
+	color:#000;	
+}
+.button-form{
+	border: solid 3px #fff;
+	padding: 10px 30px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #8DA9A7;
+	text-decoration: none;
+	color:#000;	
+    margin-right: 15px;
+    line-height: 18px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;   
+}
+
+.button-form:hover{
+	border: solid 3px #8DA9A7;	
 	background-color: #fff;
 	color:#000;	
 }
 
 input[type="text"]{
-	display: inline-block;
-	border: 1px solid #fff;
-	padding: 13px;	
-	background-color: #000;
+	display:block;
+	border: 3px solid #fff;
+	padding: 13px;
+	margin-bottom: 25px;	
+	background-color: #8DA9A7;
 	font-family: 'Raleway', sans-serif;
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     color:#fff;
+    width: 250px;
 }
 
 input[type="text"]:focus{	
-	border: 1px solid #fec901;
+	border: 3px solid #fec901;
 	padding: 13px;	
 	background-color: #fff;
 	font-family: 'Raleway', sans-serif;
@@ -165,16 +212,43 @@ input[type="text"]:focus{
 }
 
 legend{
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;	
+}
+
+.sign{
+	float:left;
+	text-align: center;	
+	height: 75px;
+	display: table;
+	padding-left: 16px;		
+}
+
+.sign > * {	
+	display: table-cell;
+    vertical-align: middle;		
+}
+
+.no-margin{
+	margin: 0 auto;
 }
 
 .box{
-	width: 80%;
+	width: 75%;
 	padding: 50px;
+}
+
+.box-mragin-top{
+	width: 75%;
+	margin-top: 50px;
 }
 
 .fix{
 	clear: fix;
+}
+.foat{
+	float: left;
 }
 
 .both{
@@ -182,6 +256,54 @@ legend{
 }
 
 .center{
-
 	margin: 0 auto;
 }
+
+.border-top{
+	border-top: 3px solid #fec901;	
+}
+
+.border-bottom{
+	border-bottom: 3px solid #fec901;	
+}
+
+.none-space{
+	margin-right: -4px;
+}
+
+.padding-top-bottom{
+	padding-top: 20px;
+	padding-bottom:20px;
+}
+
+/* ESTILOS PARA LA MAQUETACIÓN DEL HTML*/
+
+.colors{
+	display: inline-block;
+	width: 150px;	
+	float;left;			
+}
+.black{
+	height: 200px;
+	background-color: #000;
+	border: solid 1px #fff;
+}
+
+.blue{
+	height: 170px;
+	background-color: #8DA9A7;
+}
+
+.grease{
+	height: 140px;
+	background-color: #A8A48B;
+}
+.yellow{
+	height: 110px;
+	background-color: #FEC901;
+}
+.yellow-light{
+	height: 80px;
+	background-color: #FEE001;
+}
+
