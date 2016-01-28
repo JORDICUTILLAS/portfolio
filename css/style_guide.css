@@ -235,7 +235,7 @@ legend{
 }
 
 .box{
-	width: 75%;
+	width: 90%;
 	padding: 50px;
 }
 
@@ -289,7 +289,7 @@ legend{
 }
 
 .colors:hover{	
-	width: 300px;		
+	width: 200px;		
 }
 
 .black{
