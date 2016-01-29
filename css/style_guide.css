@@ -289,14 +289,17 @@ legend{
 }
 
 .colors:hover{	
-	width: 200px;		
+	width: 200px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	margin-right: auto;
+	margin-left: 4px;	
 }
 
 .black{
 	height: 200px;
 	background-color: #000;
-	border: solid 1px #fff;
-	cursor: pointer;
+	border: solid 1px #fff;	
 }
 
 .blue{
