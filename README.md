@@ -1,2 +1,2 @@
 # portfolio
-portfolito personla project bau
+portfolito personal project bau
