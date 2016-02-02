@@ -142,7 +142,7 @@ a:hover{
 	text-decoration: overline;	
 }
 
-a:active{
+.active{
 	color:  #8da9a7;
 	background-color: #fff;
 	color: #000;
