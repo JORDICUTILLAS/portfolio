@@ -9,10 +9,93 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </head>
 <body>
-    <header>
-        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript">
+    <header>        
+        <div class="sign logo" id="logo">
+            <h1 class="no-margin">Style Guide</h1>                   
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">COLORES</a></li>
+                <li><a href="#">HEADER'S</a></li>
+                <li><a href="#">FORMS</a></li>
+            </ul>            
+        </nav>
+    </header>        
+    <div class="box center">
+        <section class="withsection">
+        <h1>COLORES</h1>
+        <div class="box-mragin-top center border-top border-bottom padding-top-bottom">            
+            <div class="colors black none-space">
+                <div>
+                    <h4>#000000</h4>
+                </div>                
+            </div>
+             <div class="colors blue none-space">
+                <div>
+                    <h4>#8DA9A7</h4>
+                </div>  
+            </div>
+             <div class="colors grease none-space">
+                <div>
+                    <h4>#A8A48B</h4>
+                </div>  
+            </div>
+             <div class="colors yellow none-space">
+                <div>
+                    <h4>#FEC901</h4>
+                </div>  
+            </div>
+             <div class="colors yellow-light">
+                <div>
+                    <h4>#FEE001</h4>
+                </div>  
+            </div>
+
+        </div>
+    </section>
+        <section class="withsection">
+        <h1>HEADER'S</h1>
+            <div class="box-mragin-top center border-top border-bottom">
+                <section class="float">
+                <h1>HEADER 1</h1>
+                <h2>HEADER 2</h2>
+                <h3>HEADER 3</h3>
+                <article>
+                    <p>
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a <em>la imprenta</em>) desconocido usó una galería de textos y los mezcló de tal manera que <a href="#">logró hacer un libro </a> de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales <strong>contenian</strong> pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                    </p>
+                </article>
+                </section>                
+                <section class="float">
+                <h4>HEADER 4</h4>
+                <h5>HEADER 5</h5>
+                <h6>HEADER 6</h6>
+                <article>
+                    <p>
+                        Lorem Ipsum es <mark>simplemente el texto de</mark> relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos,quedando esencialmente igual al original.<s>Fue</s> popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                    </p>
+                </article>
+                </section>                
+            </div>
+            </section>
+            <section class="withsection">
+            <h1>BOTONES Y FORMULARIOS</h1>
+        <div class="box-mragin-top center border-top border-bottom padding-top-bottom">
+            <h3>Call's to accion</h3>
+            <button class="button-principal">SEE MY WORKS</button>
+            <button disabled class="button-principal">SEE MY WORKS</button>
+            <input type="submit" value="SEE MY WORKS" class="button-principal">
+            <a href="#" class="button-principal">LINK</a>
+            <span class="button-principal">SPAN</span>
+             <h3>Formularios</h3>          
+            <legend> Escribe tu nombre: </legend>
+            <input type="text" value="TU  NOMBRE" onfocus="this.value = ''"/>
+            <input type="text" value="EMAIL" onfocus="this.value = ''"/>
+            <input type="button" value="SEND" class="button-form">            
+        </div>
+    </section>
+    </div>
+    <script type="text/javascript">
 
         jQuery(window).scroll(function () {
             var threshold = 200;
@@ -45,85 +128,6 @@
 
 
         });
-        </script>
-        <div class="sign logo" id="logo">
-            <h1 class="no-margin">Style Guide</h1>                   
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">COLORES</a></li>
-                <li><a href="#">HEADER'S</a></li>
-                <li><a href="#">FORMS</a></li>
-            </ul>            
-        </nav>
-    </header>        
-    <div class="box center">
-        <h1>COLORES</h1>
-        <div class="box-mragin-top center border-top border-bottom padding-top-bottom">            
-            <div class="colors black none-space">
-                <div>
-                    <h4>#000000</h4>
-                </div>                
-            </div>
-             <div class="colors blue none-space">
-                <div>
-                    <h4>#8DA9A7</h4>
-                </div>  
-            </div>
-             <div class="colors grease none-space">
-                <div>
-                    <h4>#A8A48B</h4>
-                </div>  
-            </div>
-             <div class="colors yellow none-space">
-                <div>
-                    <h4>#FEC901</h4>
-                </div>  
-            </div>
-             <div class="colors yellow-light">
-                <div>
-                    <h4>#FEE001</h4>
-                </div>  
-            </div>
-
-        </div>
-        <h1>HEADER'S</h1>
-            <div class="box-mragin-top center border-top border-bottom">
-                <section class="float">
-                <h1>HEADER 1</h1>
-                <h2>HEADER 2</h2>
-                <h3>HEADER 3</h3>
-                <article>
-                    <p>
-                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a <em>la imprenta</em>) desconocido usó una galería de textos y los mezcló de tal manera que <a href="#">logró hacer un libro </a> de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales <strong>contenian</strong> pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-                    </p>
-                </article>
-                </section>                
-                <section class="float">
-                <h4>HEADER 4</h4>
-                <h5>HEADER 5</h5>
-                <h6>HEADER 6</h6>
-                <article>
-                    <p>
-                        Lorem Ipsum es <mark>simplemente el texto de</mark> relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos,quedando esencialmente igual al original.<s>Fue</s> popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-                    </p>
-                </article>
-                </section>                
-            </div>
-            <h1>BOTONES Y FORMULARIOS</h1>
-        <div class="box-mragin-top center border-top border-bottom padding-top-bottom">
-            <h3>Call's to accion</h3>
-            <button class="button-principal">SEE MY WORKS</button>
-            <button disabled class="button-principal">SEE MY WORKS</button>
-            <input type="submit" value="SEE MY WORKS" class="button-principal">
-            <a href="#" class="button-principal">LINK</a>
-            <span class="button-principal">SPAN</span>
-             <h3>Formularios</h3>          
-            <legend> Escribe tu nombre: </legend>
-            <input type="text" value="TU  NOMBRE" onfocus="this.value = ''"/>
-            <input type="text" value="EMAIL" onfocus="this.value = ''"/>
-            <input type="button" value="SEND" class="button-form">            
-        </div>
-    </div>    
+        </script>   
 </body>
 </html>
