@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>style guide</title>
-    <link rel="stylesheet" href="css/style_guide.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style_guide.css">    
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,200,500,600,800,900,700' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </head>
 <body>
     <header>        
@@ -13,14 +16,14 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">COLORES</a></li>
-                <li><a href="#">HEADER'S</a></li>
-                <li><a href="#">FORMS</a></li>
+                <li><a href="#COLORES">COLORES</a></li>
+                <li><a href="#HEADER">HEADER'S</a></li>
+                <li><a href="#FORMS">FORMS</a></li>
             </ul>            
         </nav>
     </header>        
     <div class="box center">
-        <section class="withsection">
+        <section class="withsection" id="COLORES">
         <h1>COLORES</h1>
         <div class="box-mragin-top center border-top border-bottom padding-top-bottom">            
             <div class="colors black none-space">
@@ -51,7 +54,7 @@
 
         </div>
     </section>
-        <section class="withsection">
+        <section class="withsection" id="HEADER">
         <h1>HEADER'S</h1>
             <div class="box-mragin-top center border-top border-bottom">
                 <section class="float">
@@ -76,7 +79,7 @@
                 </section>                
             </div>
             </section>
-            <section class="withsection">
+            <section class="withsection" id="FORMS">
             <h1>BOTONES Y FORMULARIOS</h1>
         <div class="box-mragin-top center border-top border-bottom padding-top-bottom">
             <h3>Call's to accion</h3>
@@ -94,7 +97,6 @@
     </section>
     </div>
     <script type="text/javascript">
-
         jQuery(window).scroll(function () {
             var threshold = 200;
         if  (jQuery(window).scrollTop() >= 200)
@@ -102,30 +104,41 @@
                                   
         else
             jQuery('header').removeClass('fixed');
-
              var threshold = 200;
         if  (jQuery(window).scrollTop() >= 200)
             jQuery('nav').addClass('fixed');              
                                   
         else
             jQuery('nav').removeClass('fixed'); 
-
            var threshold = 200;
         if  (jQuery(window).scrollTop() >= 200)
             jQuery('#logo').addClass('logo-fixed');             
                                   
         else
             jQuery('#logo').removeClass('logo-fixed');
-
         var threshold = 200;
         if  (jQuery(window).scrollTop() >= 200)
             jQuery('#logo').removeClass('sign');             
                                   
         else
             jQuery('#logo').addClass('sign');
-
-
         });
-        </script>   
+        </script>
+        <script type="text/javascript">
+        $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+        </script>
 </body>
 </html>
