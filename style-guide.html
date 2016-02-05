@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <title>style guide</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style_guide.css">    
+    <link rel="stylesheet" href="css/style_guide.css">
+    <link rel="stylesheet" href="css/libs/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,200,500,600,800,900,700' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="dist/wow.js"></script>
 </head>
 <body>
-    <header>        
+    <script>
+new WOW().init();
+wow = new WOW(
+{
+boxClass:     'wow',
+animateClass: 'animated',
+offset:       20
+}
+);
+
+
+</script>
+
+    <header class="wow fadeInDown">        
         <div class="sign logo" id="logo">
             <h1 class="no-margin">Style Guide</h1>                   
         </div>
@@ -23,7 +38,7 @@
         </nav>
     </header>        
     <div class="box center">
-        <section class="withsection" id="COLORES">
+        <section class="withsection wow fadeInDown" id="COLORES">
         <h1>COLORES</h1>
         <div class="box-mragin-top center border-top border-bottom padding-top-bottom">            
             <div class="colors black none-space">
@@ -54,7 +69,7 @@
 
         </div>
     </section>
-        <section class="withsection" id="HEADER">
+        <section class="withsection wow fadeInDown" id="HEADER">
         <h1>HEADER'S</h1>
             <div class="box-mragin-top center border-top border-bottom">
                 <section class="float">
@@ -82,15 +97,15 @@
             <section class="withsection" id="FORMS">
             <h1>BOTONES Y FORMULARIOS</h1>
         <div class="box-mragin-top center border-top border-bottom padding-top-bottom">
-            <h3>Call's to accion</h3>
-            <button class="button-principal">SEE MY WORKS</button>
-            <button disabled class="button-principal">SEE MY WORKS</button>
-            <input type="submit" value="SEE MY WORKS" class="button-principal">
-            <a href="#" class="button-principal">LINK</a>
-            <span class="button-principal">SPAN</span>
-             <h3>Formularios</h3>          
+            <h3 class="wow fadeInDown">Call's to accion</h3>
+            <button class="button-principal wow fadeInDown">SEE MY WORKS</button>
+            <button disabled class="button-principal wow fadeInDown">SEE MY WORKS</button>
+            <input type="submit" value="SEE MY WORKS" class="button-principal wow fadeInDown">
+            <a href="#" class="button-principal wow fadeInDown">LINK</a>
+            <span class="button-principal wow fadeInDown">SPAN</span>
+             <h3 class="wow fadeInDown" >Formularios</h3>          
             <legend> Escribe tu nombre: </legend>
-            <input type="text" value="TU  NOMBRE" onfocus="this.value = ''"/>
+            <input  type="text" value="TU  NOMBRE" onfocus="this.value = ''"/>
             <input type="text" value="EMAIL" onfocus="this.value = ''"/>
             <input type="button" value="SEND" class="button-form">            
         </div>

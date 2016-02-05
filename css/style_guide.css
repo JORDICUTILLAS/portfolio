@@ -6,8 +6,7 @@ body, html {
 	padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Raleway', sans-serif;	
+h1,h2,h3,h4,h5,h6 {	
 	color: #fff;
 }
 
@@ -108,24 +107,21 @@ nav.fixed ul {
 	height: auto;
 }
 
-p {
-	font-family: 'Raleway', sans-serif;
+p {	
 	font-size: 16px;
 	color: #fff;
 	font-weight: 100;
 	line-height: 25px;
 }
 
-section {
-	font-family: 'Raleway', sans-serif;
+section {	
 	font-size: 16px;
 	width: 30%;
 	display: inline-block;
 	padding: 16px;	
 }
 
-a {
-	font-family: 'Raleway', sans-serif;
+a {	
 	color: #fec901;
 	font-weight: 300;
 	text-decoration: none;
@@ -182,22 +178,19 @@ li {
 	display: inline-block;	
 }
 
-dt {
-	font-family: 'Raleway', sans-serif;
+dt {	
 	font-size: 20px;
 	font-weight: 800;
 }
 
-dd {
-	font-family: 'Raleway', sans-serif;
+dd {	
 	font-size: 16px;
 	font-weight: 600;
 }
 
 .button-principal{
 	border: solid 3px #fff;
-	padding: 10px 30px;
-	font-family: 'Raleway', sans-serif;
+	padding: 10px 30px;	
 	font-size: 16px;
 	font-weight: bold;
 	cursor: pointer;
@@ -220,8 +213,7 @@ dd {
 
 .button-form{
 	border: solid 3px #fff;
-	padding: 10px 30px;
-	font-family: 'Raleway', sans-serif;
+	padding: 10px 30px;	
 	font-size: 16px;
 	font-weight: bold;
 	cursor: pointer;
@@ -247,8 +239,7 @@ input[type="text"]{
 	border: 3px solid #fff;
 	padding: 13px;
 	margin-bottom: 25px;	
-	background-color: #8DA9A7;
-	font-family: 'Raleway', sans-serif;
+	background-color: #8DA9A7;	
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -260,15 +251,13 @@ input[type="text"]{
 input[type="text"]:focus{	
 	border: 3px solid #fec901;
 	padding: 13px;	
-	background-color: #fff;
-	font-family: 'Raleway', sans-serif;
+	background-color: #fff;	
 	color:#000;
 	content: clear;	
 }
 
 legend{
-	margin-bottom: 10px;
-	font-family: 'Raleway', sans-serif;
+	margin-bottom: 10px;	
 	font-size: 16px;	
 }
 
@@ -379,5 +368,12 @@ legend{
 .yellow-light{
 	height: 80px;
 	background-color: #FEE001;
+}
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
 }
 
