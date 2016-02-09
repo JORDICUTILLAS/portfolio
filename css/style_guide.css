@@ -142,6 +142,8 @@ a:hover{
 	color:  #8da9a7;
 	background-color: #fff;
 	color: #000;
+	padding-top: 13px;
+	padding-bottom: 13px;
 
 }
 
@@ -189,10 +191,10 @@ dd {
 }
 
 .button-principal{
-	border: solid 3px #fff;
+	border: 0px;
 	padding: 10px 30px;	
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: normal;
 	cursor: pointer;
 	background-color: #fec901;
 	text-decoration: none;
@@ -206,13 +208,13 @@ dd {
 }
 
 .button-principal:hover{
-	border: solid 3px #fec901;	
+	border: 0px;	
 	background-color: #fff;
 	color:#000;	
 }
 
 .button-form{
-	border: solid 3px #fff;
+	border: solid 2px #fff;
 	padding: 10px 30px;	
 	font-size: 16px;
 	font-weight: bold;
@@ -229,17 +231,17 @@ dd {
 }
 
 .button-form:hover{
-	border: solid 3px #8DA9A7;	
+	border: solid 2px #8DA9A7;	
 	background-color: #fff;
 	color:#000;	
 }
 
 input[type="text"]{
 	display:block;
-	border: 3px solid #fff;
+	border: 1px solid #fff;
 	padding: 13px;
 	margin-bottom: 25px;	
-	background-color: #8DA9A7;	
+	background-color: #4E7773;	
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -249,7 +251,7 @@ input[type="text"]{
 }
 
 input[type="text"]:focus{	
-	border: 3px solid #fec901;
+	border: 1px solid #fec901;
 	padding: 13px;	
 	background-color: #fff;	
 	color:#000;
@@ -353,7 +355,7 @@ legend{
 
 .blue{
 	height: 170px;
-	background-color: #8DA9A7;
+	background-color: #4E7773;
 }
 
 .grease{
