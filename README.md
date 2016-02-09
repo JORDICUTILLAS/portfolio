@@ -1,6 +1,5 @@
-![alt text][logo]
-# Style Guide portfolio
-[logo]: img/logo.jpg "Logo" 
+![LOGO](img/LOGOs.jpg "LOGO")# Style Guide portfolio
+
 
 portfolito personal project bau
 
