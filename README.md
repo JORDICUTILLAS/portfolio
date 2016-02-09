@@ -2,7 +2,7 @@
 # Style Guide portfolio
 
 
-portfolito personal project bau
+portfolito personal project BAU (Centro Universitario de Diseño de Barcelona)
 
 ![img no limits](img/no-limits.jpg "preview")
 
